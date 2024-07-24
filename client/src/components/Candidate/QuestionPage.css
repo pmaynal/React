@@ -1,0 +1,119 @@
+/* Main container */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+ 
+ 
+ 
+/* Layout for question and options */
+.content-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+ 
+/* Styling for the question text */
+.question-text {
+    font-size: 1.2em;
+    text-align: left;
+    font-weight: bold;
+    width: 45%;
+}
+ 
+/* Container for the answer choices */
+.answer-container {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+ 
+/* Individual answer choice */
+.answer-option {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+ 
+/* Answer option selected */
+.answer-option.selected {
+    background-color: #ec008c;
+    color: #ffffff;
+    border-color: #ec008c;
+}
+ 
+/* Radio button styling */
+.answer-option input[type="radio"] {
+    margin-right: 10px;
+}
+ 
+/* Container for the buttons */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+ 
+/* Next button styling */
+.next-button {
+    background-color: #ec008c; /* Matching the options' color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+ 
+.next-button:hover {
+    background-color: #d6007a;
+}
+ 
+/* Next section button styling */
+.next-section-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+ 
+.next-section-button:hover {
+    background-color: #0056b3;
+}
+ 
+/* Submit button styling */
+.submit-button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+ 
+.submit-button:hover {
+    background-color: #e68a00;
+}
